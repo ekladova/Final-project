@@ -22,6 +22,11 @@ a:hover {
 h2 {
   margin: 0;
 }
+
+ol {
+  padding: 0;
+  margin: 0;
+}
 /* navigation bar */
 
 .nav-bar {
@@ -50,4 +55,45 @@ h2 {
   text-align: center;
   width: 70%;
   padding: 2vw;
+}
+
+/* buttons */
+.buttons {
+  align-content: center;
+  position: absolute;
+  top: 90px;
+  right: 5.2vw;
+}
+
+.smaller {
+  background: #f7f7f7;
+  border-radius: 10px;
+  height: 59px;
+  width: 59px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: black 2px 2px 5px;
+  border: 0;
+}
+
+.bigger {
+  background: #ffe3e4;
+  border-radius: 10px;
+  height: 59px;
+  width: 59px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: black 2px 2px 5px;
+  border: 0;
+}
+
+.contact-button {
+  width: 192px;
+  height: 53.5px;
+  border: 0;
+  background: #c5bcd0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
