@@ -1,0 +1,375 @@
+/* __global__ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+h2 {
+  margin: 0;
+}
+/* navigation bar */
+
+.nav-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 0;
+  z-index: 999;
+  /* background-color: #406572; */
+}
+
+.nav-list-item {
+  display: inline;
+  margin: 0 3vw;
+  font-size: 1.5em;
+}
+
+.top-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #406572;
+  color: white;
+}
+
+/* __home page__ */
+.top-part {
+  margin: 0;
+  padding: 0;
+}
+
+/* buttons */
+.buttons {
+  align-content: center;
+  position: absolute;
+  top: 90px;
+  right: 5.2vw;
+}
+
+.smaller {
+  background: #f7f7f7;
+  border-radius: 10px;
+  height: 59px;
+  width: 59px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: black 2px 2px 5px;
+  border: 0;
+}
+
+.bigger {
+  background: #ffe3e4;
+  border-radius: 10px;
+  height: 59px;
+  width: 59px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: black 2px 2px 5px;
+  border: 0;
+}
+
+.contact-button {
+  width: 192px;
+  height: 53.5px;
+  border: 0;
+  background: #c5bcd0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* banner */
+
+.image {
+  background-image: url(./assets/village.jpg);
+  height: 30vw;
+  width: 45vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 50% 50% 0;
+  border-left: none;
+  box-shadow: white 0px 0px 2px 1px;
+  z-index: 998;
+}
+
+.head-greeting {
+  margin-left: 2vw;
+  font-family: "Raleway", sans-serif;
+  max-width: 45%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 2.8em;
+  align-self: baseline;
+}
+.head-greeting h4 {
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.head-greeting .contact-button {
+  margin: auto;
+}
+
+.info {
+  opacity: 0.7;
+  background-color: #d8dad94d;
+  height: 11vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* article boxes */
+.article-box a:hover {
+  opacity: 0.5;
+}
+
+.section-header {
+  margin: 4vw 0;
+  padding: 0.6em;
+  display: block;
+  font-size: 2.5em;
+  color: white;
+  background-color: #406572;
+  font-family: "Raleway", sans-serif;
+}
+
+.article-top-container {
+  background-color: #ffe3e4;
+  width: 75%;
+  margin: auto;
+  border-radius: 0.5%;
+  height: 50vw;
+  display: flex;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article-box {
+  width: 257.1px;
+  height: 226.94px;
+  background: #ffffff;
+  padding: 2vw;
+  box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
+  margin: 1vw;
+  overflow: hidden;
+}
+
+.article-head {
+  font-size: 2em;
+  color: #406572;
+  font-family: "Raleway", sans-serif;
+  margin: 21px 0;
+}
+
+/* schedule table */
+
+table {
+  border: 4px solid #406572;
+  max-width: 75%;
+  margin: 2vw auto;
+  padding: 3vw;
+}
+
+table th {
+  border-right: 4px solid #ac9fbb;
+  background-color: #ac9fbb;
+  opacity: 0.7;
+  padding: 1em;
+}
+
+td {
+  padding: 2vw;
+  margin-left: 5vw;
+}
+
+/* footer sections */
+.footer-section {
+  height: 30vw;
+  margin: 10vw;
+  display: flex;
+  justify-content: center;
+  background-image: url(./assets/road1.jpg);
+  background-size: cover;
+}
+
+.cta-box {
+  background-color: #ac9fbbe3;
+  padding: 5vw;
+  width: 45vw;
+  height: 10vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.cta-box .contact-button {
+  margin: 1em auto;
+  padding: 1vw;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.footer {
+  background-color: #406572;
+  opacity: 0.7;
+}
+
+.footer p {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  padding: 2vw;
+}
+
+/* __about page__ */
+.pink-container {
+  background-color: #406572;
+  height: 22vw;
+  display: flex;
+  align-content: flex-end;
+}
+.white-container {
+  background-color: white;
+  height: 9vw;
+}
+.purple-container {
+  background-color: #c5bcd0;
+  height: 21vw;
+  width: 80%;
+  margin: auto;
+}
+
+.people-image,
+.picture {
+  height: 16vw;
+  width: 16vw;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 999;
+  position: relative;
+  bottom: 3vw;
+}
+
+.green-container {
+  height: 38vw;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 7vw;
+  z-index: 99;
+  background-color: #ffe3e4;
+  background-image: url(./assets/capture.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.team {
+  position: relative;
+  top: 24vw;
+  text-align: center;
+  font-size: 3vw;
+  margin-top: -2vw;
+  padding: 3vw;
+  background-color: #ffe3e4;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1vw auto;
+  z-index: 999;
+  height: 31vw;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  width: 18vw;
+  height: 33vw;
+  text-align: center;
+  align-items: center;
+  top: -15vw;
+  z-index: 999;
+  border-radius: 50% 50% 10px 10px;
+}
+
+.member article {
+  /* position: relative; */
+  /* bottom: 4vw; */
+  padding: 5px;
+  height: 6vw;
+}
+
+.focus {
+  top: -6vw;
+}
+
+#member1 {
+  background: url(./assets/man1.jpg) no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+  /* position: relative; */
+  bottom: 7vw;
+}
+
+#member2 {
+  background: url(./assets/man2.jpg) center no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+  /* position: relative; */
+  /* bottom: 5vw; */
+}
+
+#member3 {
+  background: url(./assets/man3.jpg) center no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+  /* position: relative; */
+  /* bottom: 7vw; */
+}
+
+.longer {
+  height: 38vw;
+}
