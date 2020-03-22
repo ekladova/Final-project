@@ -1,0 +1,148 @@
+/* __about page__ */
+.green-container {
+  background-color: #406572;
+  height: 22vw;
+  display: flex;
+  align-content: flex-end;
+}
+
+.heading {
+  height: fit-content;
+  width: 35%;
+  font-size: 3.4vw;
+  padding: 2vw;
+  color: white;
+}
+
+.white-container {
+  background-color: white;
+  height: 9vw;
+}
+.purple-container {
+  background-color: #c5bcd0;
+  height: 35vw;
+  width: 80%;
+  margin: auto;
+}
+
+.people-image,
+.picture {
+  height: 16vw;
+  width: 16vw;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 999;
+  position: relative;
+  bottom: 3vw;
+}
+
+.pink-container {
+  height: 47vw;
+  width: 62%;
+  /* margin: auto; */
+  position: relative;
+  top: 14vw;
+  right: 19vw;
+  z-index: 99;
+  background-color: #ffe3e4;
+  line-height: 2vw;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mission-box {
+  width: 12vw;
+  background: #ffffff;
+  padding: 2vw;
+  box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
+  margin: 3vw 1vw;
+  text-align: center;
+}
+
+.mission-textbox {
+  width: 85%;
+  background: #ffffff;
+  padding: 2vw;
+  box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
+  margin: 2vw auto;
+  text-align: center;
+}
+
+.team {
+  position: relative;
+  top: -2vw;
+  text-align: center;
+  font-size: 3vw;
+  /* margin-top: -2vw; */
+  padding: 3vw;
+  background-color: #ffe3e4;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 87%;
+  margin: 1vw auto;
+  z-index: 999;
+  height: 31vw;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  width: 18vw;
+  height: 33vw;
+  text-align: center;
+  align-items: center;
+  top: -15vw;
+  z-index: 999;
+  border-radius: 50% 50% 10px 10px;
+}
+
+.member article {
+  /* position: relative; */
+  /* bottom: 4vw; */
+  padding: 5px;
+  height: 6vw;
+}
+
+.focus {
+  top: -6vw;
+}
+
+#member1 {
+  background: url(./assets/man1.jpg) no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+  /* position: relative; */
+  bottom: 7vw;
+}
+
+#member2 {
+  background: url(./assets/man2.jpg) center no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#member3 {
+  background: url(./assets/man3.jpg) center no-repeat;
+  height: 18vw;
+  width: 18vw;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.longer {
+  height: 38vw;
+}
