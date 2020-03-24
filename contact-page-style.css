@@ -1,0 +1,57 @@
+.form-container {
+  width: 60%;
+  /* margin: auto; */
+}
+
+.part1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-content: center;
+  border: 2px teal solid;
+  padding: 2vw;
+}
+
+input,
+textarea {
+  background-color: #c5bcd071;
+  box-shadow: inset 2px 2px 2px #c5bcd0;
+  resize: none;
+}
+
+.part2 {
+  border: 2px pink solid;
+  padding: 2vw;
+}
+
+.submit-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-button {
+  border: 1px black solid;
+  margin: 2vw;
+  width: 15vw;
+  height: 3vw;
+  background-color: transparent;
+  font-size: 1.5vw;
+}
+
+#clearAll {
+  background-color: #c5bcd0;
+  border: 0;
+}
+
+.top-info-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2vw;
+  justify-content: space-around;
+}
+
+.contact-description-container {
+  width: 20vw;
+}

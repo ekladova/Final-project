@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directions</title>
+    <link type="text/css" href="./stylesheet.css" rel="stylesheet" />
+    <link type="text/css" href="./contact-page-style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="top-part">
+      <header class="header">
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="./index.html">Home</a></li>
+            <li class="nav-list-item"><a href="./about.html">About Us</a></li>
+            <li class="nav-list-item">
+              <a href="./directions.html">Directions</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#"><button class="contact-button">Contact Us</button></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <main class="contact-page">
+      <div class="top-info-container">
+        <section class="form-container">
+          <form
+            action=""
+            method="post"
+            id="form1"
+            class="contact-form"
+            enctype="text/plain"
+          >
+            <section class="part1">
+              <div class="textarea">
+                <label for="Problem description">Describe the problem:</label>
+                <br />
+                <textarea
+                  id="typeBox"
+                  name="Problem description"
+                  rows="14"
+                  cols="70"
+                ></textarea>
+                <br />
+              </div>
+
+              <div class="general">
+                <label for="name">*Full Name: </label>
+                <br />
+                <input type="text" name="Name" id="name" required />
+                <br />
+
+                <label for="house">*House number: </label>
+                <br />
+                <input type="text" name="House" id="house" required />
+                <br />
+
+                <!-- <h3>Contact details:</h3> -->
+                <label for="phoneNumber">Phone: </label>
+                <br />
+                <input type="text" name="Phone Number" id="phoneNumber" />
+                <br />
+
+                <label for="emAdress">Email: </label>
+                <br />
+                <input type="text" name="Email Address" id="emAdress" />
+                <br />
+
+                <label for="issue">*Choose the issue topic: </label>
+                <br />
+                <select name="Issue" id="issue" required>
+                  <option value="///">--> Choose your option <---</option>
+                  <option value="Construstion">Construstion</option>
+                  <option value="Housing">Housing</option>
+                  <option value="Rubbish">Rubbish</option>
+                  <option value="Road">Road</option>
+                  <option value="Administration">Administration</option>
+                  <option value="Complaint">Complaint</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </section>
+            <br />
+
+            <section class="part2">
+              <div class="questions">
+                <span id="contact">How would you like to be contacted?</span>
+                <br />
+                <input
+                  type="checkbox"
+                  name="Contact"
+                  id="phone"
+                  value="phone"
+                />
+                <label class="checkLabel" for="phone">Phone</label>
+                <input type="checkbox" name="contact" id="mail" value="mail" />
+                <label class="checkLabel" for="mail">E-Mail</label>
+                <input
+                  type="checkbox"
+                  name="Contact"
+                  id="appointment"
+                  value="appointment"
+                />
+                <label class="checkLabel" for="appointment">Appointment </label>
+                <br />
+                <br />
+
+                <label for="Preferred contact"
+                  >If you wish to speak to someone in particular, please select
+                  below:
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  name="Preferred contact"
+                  id="person1"
+                  value="example1@mail.com"
+                  class="peopleChoice"
+                  onchange="getAction(form)"
+                />
+                <label class="checkLabel" for="person1">Person 1</label>
+
+                <input
+                  type="radio"
+                  name="Preferred contact"
+                  id="person2"
+                  value="example2@mail.com"
+                  class="peopleChoice"
+                  onchange="getAction(form)"
+                />
+                <label class="checkLabel" for="person2">Person 2</label>
+
+                <input
+                  type="radio"
+                  name="Preferred contact"
+                  id="person3"
+                  value="example3@mail.com"
+                  class="peopleChoice"
+                  onchange="getAction(form)"
+                />
+                <label class="checkLabel" for="person3">Person 3</label>
+
+                <input type="radio" name="Preferred contact id="person4"
+                value="example4@mail.com" class="peopleChoice"
+                onchange="getAction(form)" />
+                <label class="checkLabel" for="person4">Person 4</label>
+
+                <input
+                  type="radio"
+                  name="Preferred contact"
+                  id="default"
+                  value="example@mail.com"
+                  class="peopleChoice"
+                  onchange="getAction(form)"
+                />
+                <label class="checkLabel" for="default">Default</label>
+
+                <br />
+              </div>
+            </section>
+
+            <div class="submit-container">
+              <button
+                type="submit"
+                id="submitButton"
+                class="contact-button form-button"
+              >
+                Submit
+              </button>
+              <button
+                type="button"
+                id="clearAll"
+                class="contact-button form-button"
+              >
+                Clear
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="description-container contact-description-container">
+          <article class="description">
+            <ol>
+              <li class="list-item">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias vitae expedita quas rerum nemo, aut consequuntur
+                </p>
+              </li>
+              <li class="list-item">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias vitae expedita quas rerum nemo, aut consequuntur
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          praesentium quam alias repellendus voluptatibus asperiores cum aperiam
+          neque provident. Nemo commodi natus reprehenderit tempore est expedita
+          corporis quidem, ipsam molestias.
+        </p>
+      </div>
+    </footer>
+    <script src="./form-app.js"></script>
+  </body>
+</html>

@@ -16,7 +16,8 @@ a {
   color: inherit;
 }
 
-a:hover {
+a:hover,
+button:hover {
   opacity: 0.9;
 }
 
@@ -97,4 +98,19 @@ ol {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
+}
+
+.list-item {
+  background: #ffffff;
+  padding: 2vw;
+  box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
+  margin: 2vw;
+  list-style: none;
+}
+
+.description-container {
+  width: 40%;
+  background-color: #ffe3e4;
+  display: flex;
+  align-items: center;
 }
