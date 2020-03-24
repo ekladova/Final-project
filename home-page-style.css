@@ -15,8 +15,8 @@
 
 .image {
   background-image: url(./assets/village.jpg);
-  height: 30vw;
-  width: 45vw;
+  height: 25em;
+  width: 30em;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 50% 50% 0;
@@ -42,6 +42,7 @@
 .head-greeting h4 {
   text-align: right;
   font-size: 1.2em;
+  min-width: 20vw;
 }
 
 .head-greeting .contact-button {
@@ -78,7 +79,7 @@
   width: 75%;
   margin: auto;
   border-radius: 0.5%;
-  height: 50vw;
+  height: fit-content;
   display: flex;
 }
 
@@ -88,6 +89,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .article-box {
@@ -140,14 +142,16 @@ td {
 
 .cta-box {
   background-color: #ac9fbbe3;
-  padding: 5vw;
+  padding: 4vw;
   width: 45vw;
-  height: 10vw;
+  height: fit-content;
+  max-height: 15vw;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto 0;
+  font-size: 1.8vw;
 }
 
 .cta-box .contact-button {
@@ -155,4 +159,84 @@ td {
   padding: 1vw;
   cursor: pointer;
   font-size: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+  .footer-section {
+    height: 50vw;
+    margin: 0;
+    background-image: none;
+  }
+
+  .cta-box {
+    max-height: 42vw;
+    width: 70vw;
+  }
+
+  .cta-box p {
+    font-size: 4vw;
+  }
+
+  .info {
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image {
+    display: none;
+  }
+
+  .top-image-container {
+    height: 110vh;
+    background: url(./assets/village.jpg) center no-repeat;
+  }
+
+  .head-greeting {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .welcome-text {
+    text-shadow: black 2px 2px 2px;
+    font-size: 17vw;
+  }
+
+  .head-greeting h4 {
+    text-align: center;
+    background-color: #ac9fbbe3;
+    line-height: 2em;
+    margin: 2vw auto;
+    color: black;
+    padding: 2vw;
+  }
+
+  .contact-button {
+    width: 30vw;
+    height: 10vw;
+  }
+
+  .article-top-container {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cta-box {
+    max-width: 100%;
+    width: 100%;
+    max-height: 50vw;
+    height: 36vw;
+  }
+
+  .cta-box h2 {
+    font-size: 5vw;
+  }
+
+  .cta-box .contact-button {
+    font-size: 3.5vw;
+  }
 }

@@ -32,15 +32,20 @@ ol {
 /* navigation bar */
 
 .nav-bar {
+  height: 6vw;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0;
   z-index: 999;
   /* background-color: #406572; */
 }
 
+.nav-list {
+  margin: 2vw auto;
+  padding: 0;
+}
 .nav-list-item {
   display: inline;
   margin: 0 3vw;
@@ -62,16 +67,18 @@ ol {
 /* buttons */
 .buttons {
   align-content: center;
-  position: absolute;
-  top: 90px;
-  right: 5.2vw;
+  /* position: absolute; */
+  top: 85vh;
+  right: 3em;
+  position: fixed;
+  z-index: 9999;
 }
 
 .smaller {
   background: #f7f7f7;
   border-radius: 10px;
-  height: 59px;
-  width: 59px;
+  height: 3em;
+  width: 3em;
   font-size: 1.3em;
   cursor: pointer;
   box-shadow: black 2px 2px 5px;
@@ -81,8 +88,8 @@ ol {
 .bigger {
   background: #ffe3e4;
   border-radius: 10px;
-  height: 59px;
-  width: 59px;
+  height: 3em;
+  width: 3em;
   font-size: 1.3em;
   cursor: pointer;
   box-shadow: black 2px 2px 5px;
@@ -90,8 +97,8 @@ ol {
 }
 
 .contact-button {
-  width: 192px;
-  height: 53.5px;
+  width: 14vw;
+  height: 4vw;
   border: 0;
   background: #c5bcd0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -113,4 +120,67 @@ ol {
   background-color: #ffe3e4;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 970px) {
+  .contact-button {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-list-item {
+    font-size: 1.2em;
+  }
+
+  .contact-button {
+    height: 5vw;
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .info {
+    height: 30vw;
+  }
+
+  .nav-bar {
+    height: 20vw;
+  }
+
+  .contact-button {
+    width: 23vw;
+  }
+
+  .smaller,
+  .bigger {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .buttons {
+    right: 1em;
+  }
+
+  .smaller,
+  .bigger {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .nav-list {
+    padding: 0;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 5.3vw;
+    /* text-align: center; */
+  }
+
+  .nav-list .contact-button {
+    display: none;
+  }
 }

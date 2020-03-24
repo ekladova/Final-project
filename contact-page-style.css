@@ -12,6 +12,13 @@
   padding: 2vw;
 }
 
+.part1 input {
+  width: 15vw;
+}
+textarea {
+  max-width: 20vw;
+}
+
 input,
 textarea {
   background-color: #c5bcd071;
@@ -40,7 +47,7 @@ textarea {
   font-size: 1.5vw;
 }
 
-#clearAll {
+#submitButton {
   background-color: #c5bcd0;
   border: 0;
 }
