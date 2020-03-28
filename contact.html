@@ -12,6 +12,15 @@
     />
   </head>
   <body>
+    <div class="buttons">
+      <button class="smaller" id="small">
+        <span>aa</span>
+      </button>
+      <button class="bigger" id="big">
+        <span>AA</span>
+      </button>
+    </div>
+
     <section class="top-part">
       <header class="header">
         <nav class="nav-bar">
@@ -148,9 +157,14 @@
                 />
                 <label class="checkLabel" for="person3">Person 3</label>
 
-                <input type="radio" name="Preferred contact id="person4"
-                value="example4@mail.com" class="peopleChoice"
-                onchange="getAction(form)" />
+                <input
+                  type="radio"
+                  name="Preferred contact"
+                  id="person4"
+                  value="example4@mail.com"
+                  class="peopleChoice"
+                  onchange="getAction(form)"
+                />
                 <label class="checkLabel" for="person4">Person 4</label>
 
                 <input

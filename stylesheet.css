@@ -9,6 +9,7 @@ body {
 
 p {
   margin: 0;
+  font-size: 1.5vw;
 }
 
 a {
@@ -23,6 +24,7 @@ button:hover {
 
 h2 {
   margin: 0;
+  font-size: 2vw;
 }
 
 ol {
@@ -39,7 +41,6 @@ ol {
   align-items: center;
   margin: 0;
   z-index: 999;
-  /* background-color: #406572; */
 }
 
 .nav-list {
@@ -57,7 +58,7 @@ ol {
   opacity: 0.7;
 }
 
-.footer p {
+.footer .p-text {
   margin: 0 auto;
   text-align: center;
   width: 70%;
@@ -68,7 +69,7 @@ ol {
 .buttons {
   align-content: center;
   /* position: absolute; */
-  top: 85vh;
+  top: 90vh;
   right: 3em;
   position: fixed;
   z-index: 9999;
@@ -150,6 +151,7 @@ ol {
 
   .contact-button {
     width: 23vw;
+    font-size: 2vw;
   }
 
   .smaller,
@@ -159,7 +161,7 @@ ol {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 530px) {
   .buttons {
     right: 1em;
   }
@@ -175,12 +177,14 @@ ol {
     height: 20vw;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     font-size: 5.3vw;
-    /* text-align: center; */
   }
 
   .nav-list .contact-button {
     display: none;
+  }
+
+  footer .p-text {
+    font-size: 4vw;
   }
 }

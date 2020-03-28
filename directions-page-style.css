@@ -22,3 +22,64 @@
 .map {
   margin: 5vw;
 }
+
+.iframe-map {
+  width: 40vw;
+  height: 25vw;
+}
+
+.p-text-directions {
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .p-text-directions {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .p-text-directions {
+    font-size: 1.5vw;
+  }
+  .iframe-map {
+    width: 39vw;
+    height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .directions-page {
+    flex-direction: column;
+  }
+
+  .heading {
+    width: 95%;
+    font-size: 2em;
+  }
+
+  .description-container {
+    width: 95%;
+  }
+
+  .list-item {
+    height: 15vw;
+  }
+  .mapouter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .gmap_canvas {
+    margin: auto;
+  }
+
+  .iframe-map {
+    width: 70vw;
+    height: 50vw;
+  }
+
+  .p-text-directions {
+    font-size: 2.5vw;
+  }
+}

@@ -20,7 +20,7 @@
 }
 .purple-container {
   background-color: #c5bcd0;
-  height: 41vw;
+  height: 44vw;
   width: 80%;
   margin: auto;
 }
@@ -37,7 +37,7 @@
 }
 
 .pink-container {
-  height: 47vw;
+  height: 50vw;
   width: 62%;
   /* margin: auto; */
   position: relative;
@@ -46,6 +46,7 @@
   z-index: 99;
   background-color: #ffe3e4;
   line-height: 2vw;
+  max-height: 100vw;
 }
 
 .mission-container {
@@ -57,6 +58,7 @@
 
 .mission-box {
   width: 12vw;
+  /* min-width: 135px; */
   background: #ffffff;
   padding: 2vw;
   box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
@@ -75,9 +77,10 @@
 
 .team {
   position: relative;
-  top: -2vw;
+  top: -1em;
   text-align: center;
-  font-size: 3vw;
+  max-height: 1em;
+  font-size: 3.5vw;
   /* margin-top: -2vw; */
   padding: 4.92vw;
   background-color: #ffe3e4;
@@ -118,7 +121,7 @@
 }
 
 #member1 {
-  background: url(./assets/man1.jpg) no-repeat;
+  background: url(./assets/man3.jpg) no-repeat;
   height: 18vw;
   width: 18vw;
   border-radius: 50%;
@@ -136,7 +139,7 @@
 }
 
 #member3 {
-  background: url(./assets/man3.jpg) center no-repeat;
+  background: url(./assets/man1.jpg) center no-repeat;
   height: 18vw;
   width: 18vw;
   border-radius: 50%;
@@ -144,5 +147,129 @@
 }
 
 .longer {
-  height: 40vw;
+  height: 45vw;
+}
+
+.p-text-about {
+  line-height: 2.5vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .green-container {
+    flex-direction: column;
+  }
+
+  .pink-container {
+    position: initial;
+    width: 85%;
+    margin: auto;
+    height: fit-content;
+  }
+
+  .mission-box {
+    width: 21vw;
+    line-height: 3vw;
+  }
+
+  .p-text-about {
+    font-size: 1.7vw;
+    line-height: 3vw;
+  }
+
+  .purple-container {
+    width: 95%;
+    height: 43vw;
+  }
+
+  .longer {
+    height: 65vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .mission-box {
+    width: 85%;
+    height: 10vw;
+  }
+
+  .purple-container {
+    height: 67vw;
+  }
+
+  .team-container {
+    width: 100%;
+  }
+
+  .member {
+    width: 30vw;
+  }
+
+  #member1,
+  #member2,
+  #member3 {
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .longer {
+    height: 55vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .heading {
+    font-size: 5vw;
+    width: 95%;
+  }
+  .mission-box {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission-box h2,
+  .p-text-about {
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+
+  .purple-container {
+    height: 165vw;
+    width: 100%;
+  }
+
+  .pink-container {
+    max-height: none;
+  }
+
+  .team {
+    top: 0;
+    font-size: 5.5vw;
+  }
+
+  .team-container {
+    flex-wrap: wrap;
+  }
+
+  .member {
+    width: 48vw;
+    height: 107vw;
+    margin: 1vw;
+  }
+
+  #member1,
+  #member2,
+  #member3 {
+    height: 48vw;
+    width: 48vw;
+  }
+
+  .longer {
+    height: 221vw;
+  }
 }
