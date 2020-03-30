@@ -154,7 +154,7 @@
   line-height: 2vw;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .green-container {
     flex-direction: column;
   }
