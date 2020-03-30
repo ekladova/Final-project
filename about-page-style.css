@@ -39,7 +39,6 @@
 .pink-container {
   height: 50vw;
   width: 62%;
-  /* margin: auto; */
   position: relative;
   top: 14vw;
   right: 19vw;
@@ -58,7 +57,6 @@
 
 .mission-box {
   width: 12vw;
-  /* min-width: 135px; */
   background: #ffffff;
   padding: 2vw;
   box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
@@ -81,7 +79,6 @@
   text-align: center;
   max-height: 1em;
   font-size: 3.5vw;
-  /* margin-top: -2vw; */
   padding: 4.92vw;
   background-color: #ffe3e4;
 }
@@ -92,8 +89,6 @@
   justify-content: space-around;
   width: 87%;
   margin: 1vw auto;
-  z-index: 999;
-  height: 31vw;
 }
 
 .member {
@@ -101,17 +96,14 @@
   flex-direction: column;
   background-color: #f7f7f7;
   width: 18vw;
-  height: 33vw;
+  height: 35vw;
   text-align: center;
   align-items: center;
-  top: -15vw;
   z-index: 999;
   border-radius: 50% 50% 10px 10px;
 }
 
 .member article {
-  /* position: relative; */
-  /* bottom: 4vw; */
   padding: 5px;
   height: 6vw;
 }
@@ -126,8 +118,6 @@
   width: 18vw;
   border-radius: 50%;
   background-size: cover;
-  /* position: relative; */
-  bottom: 7vw;
 }
 
 #member2 {
@@ -154,7 +144,7 @@
   line-height: 2vw;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1120px) {
   .green-container {
     flex-direction: column;
   }

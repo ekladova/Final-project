@@ -26,12 +26,18 @@
         <nav class="nav-bar">
           <ul class="nav-list">
             <li class="nav-list-item"><a href="./index.html">Home</a></li>
-            <li class="nav-list-item"><a href="./about.html">About Us</a></li>
+            <li class="nav-list-item"><a href="./about.html">About</a></li>
             <li class="nav-list-item">
               <a href="./directions.html">Directions</a>
             </li>
             <li class="nav-list-item">
-              <a href="#"><button class="contact-button">Contact Us</button></a>
+              <a href="./contact.html"
+                ><button class="contact-button">Contact</button></a
+              >
+            </li>
+
+            <li class="nav-list-item hidden">
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -101,83 +107,93 @@
 
             <section class="part2">
               <div class="questions">
-                <span id="contact">How would you like to be contacted?</span>
+                <div class="questions-part1">
+                  <span id="contact">How would you like to be contacted?</span>
+                  <br />
+                  <input
+                    type="checkbox"
+                    name="Contact"
+                    id="phone"
+                    value="phone"
+                  />
+                  <label class="checkLabel" for="phone">Phone</label>
+                  <input
+                    type="checkbox"
+                    name="contact"
+                    id="mail"
+                    value="mail"
+                  />
+                  <label class="checkLabel" for="mail">E-Mail</label>
+                  <input
+                    type="checkbox"
+                    name="Contact"
+                    id="appointment"
+                    value="appointment"
+                  />
+                  <label class="checkLabel" for="appointment"
+                    >Appointment
+                  </label>
+                </div>
                 <br />
-                <input
-                  type="checkbox"
-                  name="Contact"
-                  id="phone"
-                  value="phone"
-                />
-                <label class="checkLabel" for="phone">Phone</label>
-                <input type="checkbox" name="contact" id="mail" value="mail" />
-                <label class="checkLabel" for="mail">E-Mail</label>
-                <input
-                  type="checkbox"
-                  name="Contact"
-                  id="appointment"
-                  value="appointment"
-                />
-                <label class="checkLabel" for="appointment">Appointment </label>
                 <br />
-                <br />
+                <div class="questions-part2">
+                  <label for="Preferred contact"
+                    >If you wish to speak to someone in particular, please
+                    select below:
+                  </label>
+                  <br />
+                  <input
+                    type="radio"
+                    name="Preferred contact"
+                    id="person1"
+                    value="example1@mail.com"
+                    class="peopleChoice"
+                    onchange="getAction(form)"
+                  />
+                  <label class="checkLabel" for="person1">Person 1</label>
 
-                <label for="Preferred contact"
-                  >If you wish to speak to someone in particular, please select
-                  below:
-                </label>
-                <br />
-                <input
-                  type="radio"
-                  name="Preferred contact"
-                  id="person1"
-                  value="example1@mail.com"
-                  class="peopleChoice"
-                  onchange="getAction(form)"
-                />
-                <label class="checkLabel" for="person1">Person 1</label>
+                  <input
+                    type="radio"
+                    name="Preferred contact"
+                    id="person2"
+                    value="example2@mail.com"
+                    class="peopleChoice"
+                    onchange="getAction(form)"
+                  />
+                  <label class="checkLabel" for="person2">Person 2</label>
 
-                <input
-                  type="radio"
-                  name="Preferred contact"
-                  id="person2"
-                  value="example2@mail.com"
-                  class="peopleChoice"
-                  onchange="getAction(form)"
-                />
-                <label class="checkLabel" for="person2">Person 2</label>
+                  <input
+                    type="radio"
+                    name="Preferred contact"
+                    id="person3"
+                    value="example3@mail.com"
+                    class="peopleChoice"
+                    onchange="getAction(form)"
+                  />
+                  <label class="checkLabel" for="person3">Person 3</label>
 
-                <input
-                  type="radio"
-                  name="Preferred contact"
-                  id="person3"
-                  value="example3@mail.com"
-                  class="peopleChoice"
-                  onchange="getAction(form)"
-                />
-                <label class="checkLabel" for="person3">Person 3</label>
+                  <input
+                    type="radio"
+                    name="Preferred contact"
+                    id="person4"
+                    value="example4@mail.com"
+                    class="peopleChoice"
+                    onchange="getAction(form)"
+                  />
+                  <label class="checkLabel" for="person4">Person 4</label>
 
-                <input
-                  type="radio"
-                  name="Preferred contact"
-                  id="person4"
-                  value="example4@mail.com"
-                  class="peopleChoice"
-                  onchange="getAction(form)"
-                />
-                <label class="checkLabel" for="person4">Person 4</label>
+                  <input
+                    type="radio"
+                    name="Preferred contact"
+                    id="default"
+                    value="example@mail.com"
+                    class="peopleChoice"
+                    onchange="getAction(form)"
+                  />
+                  <label class="checkLabel" for="default">Default</label>
 
-                <input
-                  type="radio"
-                  name="Preferred contact"
-                  id="default"
-                  value="example@mail.com"
-                  class="peopleChoice"
-                  onchange="getAction(form)"
-                />
-                <label class="checkLabel" for="default">Default</label>
-
-                <br />
+                  <br />
+                </div>
               </div>
             </section>
 

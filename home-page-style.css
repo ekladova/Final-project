@@ -112,6 +112,7 @@
 
 .learn-more {
   text-align: right;
+  color: #406572;
 }
 
 /* schedule table */
@@ -183,13 +184,13 @@ td {
   font-size: 1.5vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .p-text {
     font-size: 2.3vw;
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 730px) {
   .footer-section {
     height: 50vw;
     margin: 0;
@@ -210,11 +211,11 @@ td {
   }
 
   .p-text {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
   .image {
     display: none;
   }
@@ -236,6 +237,7 @@ td {
   .welcome-text {
     text-shadow: black 2px 2px 2px;
     font-size: 17vw;
+    margin: 0;
   }
 
   .head-greeting h4 {
@@ -286,5 +288,11 @@ td {
 
   .cta-box .p-text {
     font-size: 4.5vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .p-text {
+    font-size: 4.6vw;
   }
 }

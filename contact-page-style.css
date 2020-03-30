@@ -13,6 +13,7 @@
 
 .part1 input {
   width: 15vw;
+  height: 2.5vw;
 }
 textarea {
   max-width: 20vw;
@@ -23,6 +24,10 @@ textarea {
   background-color: #c5bcd071;
   box-shadow: inset 2px 2px 2px #c5bcd0;
   resize: none;
+}
+
+select {
+  height: 3vw;
 }
 
 .part2 {
@@ -59,5 +64,70 @@ textarea {
 }
 
 .contact-description-container {
-  width: 20vw;
+  width: 30vw;
+}
+
+@media only screen and (max-width: 950px) {
+  .part1 input {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .form-container {
+    width: 95%;
+  }
+  .part1,
+  .textarea,
+  .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #typeBox {
+    max-width: 65vw;
+  }
+
+  .part1 input {
+    width: 65vw;
+    height: 10vw;
+  }
+
+  .questions-part2,
+  .questions-part1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .part2 input {
+    height: 3vw;
+    width: 3vw;
+    border: none;
+    box-shadow: none;
+  }
+
+  .part1 select {
+    height: 10vw;
+    width: 45vw;
+  }
+
+  .top-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-description-container {
+    width: 85%;
+    margin: 5vw;
+    padding: 3vw;
+  }
+
+  .form-button {
+    font-size: 3.5vw;
+    height: 6vw;
+    width: 20vw;
+  }
 }

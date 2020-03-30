@@ -41,6 +41,10 @@ ol {
   margin: 0;
   z-index: 999;
 }
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
 
 .nav-list {
   margin: 2vw auto;
@@ -176,11 +180,20 @@ ol {
     height: 20vw;
     display: flex;
     align-items: center;
-    font-size: 5.3vw;
+    font-size: 4.3vw;
   }
 
   .nav-list .contact-button {
     display: none;
+    position: absolute;
+  }
+
+  .hidden {
+    visibility: visible;
+    position: static;
+    color: purple;
+    font-weight: bolder;
+    text-decoration: overline;
   }
 
   footer .p-text {
