@@ -47,10 +47,13 @@ ol {
 }
 
 .nav-list {
-  /* margin: 2vw auto; */
+  margin: auto;
   padding: 0;
-  /* align-items: center; */
-  /* justify-self: center; */
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+  display: flex;
+  /* font-size: 3.5vw; */
 }
 .nav-list-item {
   display: inline;
@@ -143,6 +146,13 @@ ol {
     height: 5vw;
     width: 20vw;
   }
+
+  .nav-bar {
+    height: 15vw;
+  }
+  .nav-list {
+    font-size: 3.5vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -166,7 +176,7 @@ ol {
   }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 570px) {
   .buttons {
     right: 1em;
   }
@@ -180,7 +190,7 @@ ol {
   .nav-list {
     padding: 0;
     height: 20vw;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-size: 3.9vw;
   }
