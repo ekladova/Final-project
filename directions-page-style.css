@@ -63,7 +63,7 @@
   }
 
   .list-item {
-    height: 35vw;
+    height: fit-content;
   }
   .mapouter {
     width: 100%;

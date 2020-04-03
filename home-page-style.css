@@ -95,7 +95,7 @@
 
 .article-box {
   width: 257.1px;
-  height: 226.94px;
+  height: fit-content;
   background: #ffffff;
   padding: 2vw;
   box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
@@ -181,7 +181,7 @@ td {
 }
 
 .p-text {
-  font-size: 1.5vw;
+  font-size: large;
 }
 
 @media only screen and (max-width: 950px) {
@@ -207,7 +207,7 @@ td {
   }
 
   .info {
-    height: 30vw;
+    height: fit-content;
   }
 
   .p-text {
@@ -250,8 +250,8 @@ td {
   }
 
   .contact-button {
-    width: 30vw;
-    height: 10vw;
+    width: 21vw;
+    height: 7vw;
     font-size: 3.5vw;
   }
 

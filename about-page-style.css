@@ -94,13 +94,11 @@
 .member {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
   width: 18vw;
   height: 35vw;
   text-align: center;
   align-items: center;
   z-index: 999;
-  border-radius: 50% 50% 10px 10px;
 }
 
 .member article {
@@ -168,7 +166,7 @@
 
   .purple-container {
     width: 95%;
-    height: 43vw;
+    height: 60vw;
   }
 
   .longer {
@@ -183,11 +181,11 @@
 
   .mission-box {
     width: 85%;
-    height: 10vw;
+    height: 15vw;
   }
 
   .purple-container {
-    height: 67vw;
+    height: 92vw;
   }
 
   .team-container {
@@ -206,7 +204,7 @@
   }
 
   .longer {
-    height: 55vw;
+    height: 78vw;
   }
 }
 

@@ -75,7 +75,7 @@
 
                 <label for="house">*House number: </label>
                 <br />
-                <input type="text" name="House" id="house" required />
+                <input type="number" name="House" id="house" required />
                 <br />
 
                 <!-- <h3>Contact details:</h3> -->
@@ -86,7 +86,7 @@
 
                 <label for="emAdress">Email: </label>
                 <br />
-                <input type="text" name="Email Address" id="emAdress" />
+                <input type="text" name="Email Address" id="emAddress" />
                 <br />
 
                 <label for="issue">*Choose the issue topic: </label>
@@ -113,22 +113,25 @@
                   <input
                     type="checkbox"
                     name="Contact"
-                    id="phone"
-                    value="phone"
+                    id=" phone "
+                    value=" phone "
+                    class="contacts"
                   />
                   <label class="checkLabel" for="phone">Phone</label>
                   <input
                     type="checkbox"
                     name="contact"
                     id="mail"
-                    value="mail"
+                    value=" mail "
+                    class="contacts"
                   />
                   <label class="checkLabel" for="mail">E-Mail</label>
                   <input
                     type="checkbox"
                     name="Contact"
                     id="appointment"
-                    value="appointment"
+                    value=" appointment "
+                    class="contacts"
                   />
                   <label class="checkLabel" for="appointment"
                     >Appointment
@@ -148,7 +151,6 @@
                     id="person1"
                     value="example1@mail.com"
                     class="peopleChoice"
-                    onchange="getAction(form)"
                   />
                   <label class="checkLabel" for="person1">Person 1</label>
 
@@ -158,7 +160,6 @@
                     id="person2"
                     value="example2@mail.com"
                     class="peopleChoice"
-                    onchange="getAction(form)"
                   />
                   <label class="checkLabel" for="person2">Person 2</label>
 
@@ -168,7 +169,6 @@
                     id="person3"
                     value="example3@mail.com"
                     class="peopleChoice"
-                    onchange="getAction(form)"
                   />
                   <label class="checkLabel" for="person3">Person 3</label>
 
@@ -178,7 +178,6 @@
                     id="person4"
                     value="example4@mail.com"
                     class="peopleChoice"
-                    onchange="getAction(form)"
                   />
                   <label class="checkLabel" for="person4">Person 4</label>
 
@@ -188,7 +187,6 @@
                     id="default"
                     value="example@mail.com"
                     class="peopleChoice"
-                    onchange="getAction(form)"
                   />
                   <label class="checkLabel" for="default">Default</label>
 
@@ -247,5 +245,6 @@
       </div>
     </footer>
     <script src="./form-app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
