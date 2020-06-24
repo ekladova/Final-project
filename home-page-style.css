@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #406572;
   color: white;
 }
@@ -25,6 +26,21 @@
   z-index: 998;
 }
 
+#text {
+  color: #ffe3e4;
+  text-decoration: underline;
+}
+
+.blink {
+  opacity: 0;
+  animation: typewritter 750ms ease-in-out infinite;
+}
+@keyframes typewritter {
+  100% {
+    opacity: 1;
+  }
+}
+
 .head-greeting {
   margin-left: 2vw;
   font-family: "Raleway", sans-serif;
@@ -39,15 +55,24 @@
   font-size: 2.8em;
   align-self: baseline;
 }
-.head-greeting h4 {
+.head-greeting h2 {
   text-align: right;
-  font-size: 1.2em;
+  font-size: 1.4em;
   min-width: 20vw;
   padding: 2vw;
 }
 
+.banner-buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.directions-button {
+  background-color: #ffe3e4;
+}
 .head-greeting .contact-button {
-  margin: auto;
+  margin: 2vw;
 }
 
 .info {
@@ -113,6 +138,7 @@
 .learn-more {
   text-align: right;
   color: #406572;
+  float: right;
 }
 
 /* schedule table */
@@ -150,7 +176,7 @@ td {
   background-color: #ac9fbbe3;
   padding: 4vw;
   width: 45vw;
-  max-height: 15vw;
+  max-height: 16vw;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -174,10 +200,6 @@ td {
   font-size: 3vw;
   padding: 1vw;
   text-shadow: 2px 2px 10px darkslategrey;
-}
-
-.cta-box .p-text {
-  font-size: 1.7vw;
 }
 
 .p-text {
@@ -240,7 +262,7 @@ td {
     margin: 0;
   }
 
-  .head-greeting h4 {
+  .head-greeting h2 {
     text-align: center;
     background-color: #ac9fbbe3;
     line-height: 2em;

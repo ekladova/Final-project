@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Directions</title>
+    <title>Contact</title>
     <link type="text/css" href="./stylesheet.css" rel="stylesheet" />
     <link type="text/css" href="./contact-page-style.css" rel="stylesheet" />
     <link
@@ -53,6 +79,7 @@
             id="form1"
             class="contact-form"
             enctype="text/plain"
+            target="_top"
           >
             <section class="part1">
               <div class="textarea">
@@ -81,12 +108,12 @@
                 <!-- <h3>Contact details:</h3> -->
                 <label for="phoneNumber">Phone: </label>
                 <br />
-                <input type="text" name="Phone Number" id="phoneNumber" />
+                <input type="number" name="Phone Number" id="phoneNumber" />
                 <br />
 
                 <label for="emAdress">Email: </label>
                 <br />
-                <input type="text" name="Email Address" id="emAddress" />
+                <input type="email" name="Email Address" id="emAddress" />
                 <br />
 
                 <label for="issue">*Choose the issue topic: </label>
@@ -145,51 +172,54 @@
                     select below:
                   </label>
                   <br />
-                  <input
-                    type="radio"
-                    name="Preferred contact"
-                    id="person1"
-                    value="example1@mail.com"
-                    class="peopleChoice"
-                  />
-                  <label class="checkLabel" for="person1">Person 1</label>
+                  <div class="peopleInputs">
+                    <input
+                      type="radio"
+                      name="Preferred contact"
+                      id="person1"
+                      value="example1@mail.com"
+                      class="peopleChoice"
+                    />
+                    <label class="checkLabel" for="person1">Jane Doe</label>
 
-                  <input
-                    type="radio"
-                    name="Preferred contact"
-                    id="person2"
-                    value="example2@mail.com"
-                    class="peopleChoice"
-                  />
-                  <label class="checkLabel" for="person2">Person 2</label>
+                    <input
+                      type="radio"
+                      name="Preferred contact"
+                      id="person2"
+                      value="example2@mail.com"
+                      class="peopleChoice"
+                    />
+                    <label class="checkLabel" for="person2">John Smith</label>
 
-                  <input
-                    type="radio"
-                    name="Preferred contact"
-                    id="person3"
-                    value="example3@mail.com"
-                    class="peopleChoice"
-                  />
-                  <label class="checkLabel" for="person3">Person 3</label>
-
-                  <input
-                    type="radio"
-                    name="Preferred contact"
-                    id="person4"
-                    value="example4@mail.com"
-                    class="peopleChoice"
-                  />
-                  <label class="checkLabel" for="person4">Person 4</label>
-
-                  <input
-                    type="radio"
-                    name="Preferred contact"
-                    id="default"
-                    value="example@mail.com"
-                    class="peopleChoice"
-                  />
-                  <label class="checkLabel" for="default">Default</label>
-
+                    <input
+                      type="radio"
+                      name="Preferred contact"
+                      id="person3"
+                      value="example3@mail.com"
+                      class="peopleChoice"
+                    />
+                    <label class="checkLabel" for="person3">James Brown</label>
+                    <div class="group4">
+                      <input
+                        type="radio"
+                        name="Preferred contact"
+                        id="person4"
+                        value="example4@mail.com"
+                        class="peopleChoice"
+                      />
+                      <label class="checkLabel" for="person4">John Doe</label>
+                    </div>
+                    <div class="default">
+                      <input
+                        type="radio"
+                        name="Preferred contact"
+                        id="default"
+                        value="example@mail.com"
+                        class="peopleChoice"
+                      />
+                      <label class="checkLabel" for="default">General</label>
+                    </div>
+                  </div>
                   <br />
                 </div>
               </div>
@@ -219,14 +249,17 @@
             <ol>
               <li class="list-item">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias vitae expedita quas rerum nemo, aut consequuntur
+                  Please, make sure to fully describe the problem you are
+                  dealing with so we can assist you to the fullest stadard.
                 </p>
               </li>
               <li class="list-item">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias vitae expedita quas rerum nemo, aut consequuntur
+                  Submiting would take you to your preferred email app.
+                  <br />Please, don't hesitate to contact us in case of any
+                  issues: <br />
+                  <br />
+                  <em>support@example.com</em>
                 </p>
               </li>
             </ol>
@@ -237,10 +270,8 @@
 
     <footer class="footer">
       <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          praesentium quam alias repellendus voluptatibus asperiores cum aperiam
-          neque provident.
+        <p class="p-text">
+          Made by Kate
         </p>
       </div>
     </footer>

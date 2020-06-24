@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Directions</title>
@@ -50,6 +76,7 @@
         <div class="gmap_canvas">
           <iframe
             class="iframe-map"
+            name="map"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=Rochdale%20Town%20Hall%2C%20The%20Esplanade%2C%20Rochdale&t=&z=11&ie=UTF8&iwloc=&output=embed"
             frameborder="0"
@@ -61,40 +88,30 @@
       </div>
 
       <article class="description-container">
-        <ol>
+        <ul>
           <li class="list-item">
             <p class="p-text-directions">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              deserunt libero provident obcaecati voluptas animi eligendi minima
-              maxime sit quo quidem aperiam similique, molestiae unde accusamus
-              odit ipsa veritatis expedita.
+              Our town is conveniently connected to the public transport
+              system.<br /><br />
+              <strong>Trains:</strong> Brighton, Surrey, York <br />
+              <strong>Buses:</strong> D853, A092, K247
             </p>
           </li>
           <li class="list-item">
             <p class="p-text-directions">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              deserunt libero provident obcaecati voluptas animi eligendi minima
-              maxime sit quo quidem aperiam similique, molestiae unde accusamus
-              odit ipsa veritatis expedita.
+              <strong>Address:</strong> <br />
+              Town Hall, <br />
+              294 Blue Street, <br />Town <br />
+              NSH382GF
             </p>
           </li>
-          <li class="list-item">
-            <p class="p-text-directions">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              deserunt libero provident obcaecati voluptas animi eligendi minima
-              maxime sit quo quidem aperiam similique, molestiae unde accusamus
-              odit ipsa veritatis expedita.
-            </p>
-          </li>
-        </ol>
+        </ul>
       </article>
     </main>
     <footer class="footer">
       <div>
-        <p class="p-text-directions">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          praesentium quam alias repellendus voluptatibus asperiores cum aperiam
-          neque provident.
+        <p class="p-text">
+          Made by Kate
         </p>
       </div>
     </footer>

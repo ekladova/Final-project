@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
@@ -12,8 +38,8 @@
     />
   </head>
   <body>
-    <section class="top-part">
-      <header class="header">
+    <header class="top-part">
+      <section class="header">
         <nav class="nav-bar">
           <ul class="nav-list">
             <li class="nav-list-item"><a href="./index.html">Home</a></li>
@@ -32,37 +58,49 @@
             </li>
           </ul>
         </nav>
-      </header>
-      <section class="top-image-container">
-        <div class="image"></div>
-        <div class="head-greeting">
-          <div class="buttons">
-            <button class="smaller" id="small">
-              <span>aa</span>
-            </button>
-            <button class="bigger" id="big">
-              <span>AA</span>
-            </button>
-          </div>
-
-          <h1 class="welcome-text">Welcome!</h1>
-          <br />
-          <h4>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-            ex unde, expedita sapiente possimus.
-          </h4>
-          <a href="#"><button class="contact-button">Contact Us</button></a>
-        </div>
       </section>
+    </header>
+
+    <section class="top-image-container">
+      <div class="image"></div>
+
+      <div class="head-greeting">
+        <div class="buttons">
+          <button class="smaller" id="small">
+            <span>aa</span>
+          </button>
+          <button class="bigger" id="big">
+            <span>AA</span>
+          </button>
+        </div>
+
+        <h1 class="welcome-text">Welcome!</h1>
+        <br />
+        <h2>
+          The official <span id="text"></span> <span class="blink">|</span>
+          <br />portal.
+        </h2>
+
+        <div class="banner-buttons">
+          <a href="./contact.html"
+            ><button class="contact-button">Contact Us</button></a
+          >
+          <a href="./directions.html"
+            ><button class="contact-button directions-button">
+              Directions
+            </button></a
+          >
+        </div>
+      </div>
     </section>
 
     <main class="home-page page">
       <section class="info">
         <p class="p-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eius,
-          tempore voluptas, quod rerum itaque possimus expedita modi optio
-          ratione nostrum nisi minima, dicta in. Natus iure modi fugiat
-          voluptatem.
+          “Communication – the human connection – is the key to personal and
+          career success.”<br />
+
+          <strong>Paul J. Meyer</strong>
         </p>
       </section>
 
@@ -71,44 +109,46 @@
       <section class="article-top-container">
         <div class="article-container">
           <div class="article-box">
-            <h3 class="article-head">Article Heading</h3>
+            <h3 class="article-head">5 Keys for Success</h3>
             <p class="p-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus itaque voluptatum minima sint<br />
-              <a class="learn-more" href="#">Learn More</a>
+              Local residents are sharing their experience with life in a rural
+              area.
+              <br />
+              <a class="learn-more" href="./article.html">Learn More</a>
             </p>
           </div>
           <div class="article-box">
-            <h3 class="article-head">Article Heading</h3>
+            <h3 class="article-head">Seasonal Plants</h3>
             <p class="p-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus itaque voluptatum minima sint<br />
-              <a class="learn-more" href="#">Learn More</a>
+              What flowers are the best to plant around spring? Find out in this
+              interview from a local gardener!<br />
+              <a class="learn-more" href="./article.html">Learn More</a>
             </p>
           </div>
           <div class="article-box">
-            <h3 class="article-head">Article Heading</h3>
+            <h3 class="article-head">Stranger Danger</h3>
             <p class="p-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus itaque voluptatum minima sint<br />
-              <a class="learn-more" href="#">Learn More</a>
+              See someone you don't recognise? Have a look what our sescurity
+              officer is saying about stangers in the neighbourhood.<br />
+              <a class="learn-more" href="./article.html">Learn More</a>
             </p>
           </div>
           <div class="article-box">
-            <h3 class="article-head">Article Heading</h3>
+            <h3 class="article-head">Family reunion</h3>
             <p class="p-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus itaque voluptatum minima sint<br />
-              <a class="learn-more" href="#">Learn More</a>
+              Spring break is here! Local residents are sharing exciting things
+              to do while the whole family is together for the holidays.<br />
+              <a class="learn-more" href="./article.html">Learn More</a>
             </p>
           </div>
           <div class="article-box">
             <a class="article-link" href="#">
-              <h3 class="article-head">Article Heading</h3>
+              <h3 class="article-head">Stay Home. Save Lives</h3>
               <p class="p-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus itaque voluptatum minima sint<br />
-                <a class="learn-more" href="#">Learn More</a>
+                Recent updates from the NHS strongly advise to limit the social
+                gatherings and stay at home in these stange times. Stay safe
+                everyone!<br />
+                <a class="learn-more" href="./article.html">Learn More</a>
               </p>
             </a>
           </div>
@@ -124,10 +164,9 @@
               <th class="date">29 April</th>
               <td class="schedule-desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  repudiandae, deserunt suscipit perferendis id adipisci eaque
-                  architecto autem ad blanditiis quod rerum repellat quas atque
-                  consectetur tenetur aspernatur deleniti. Magnam!
+                  Residents' meeting at the Town Center. Discussion about the
+                  road construction and repairs with a communal buffet
+                  afterwards! See you there!
                 </p>
               </td>
             </tr>
@@ -135,10 +174,8 @@
               <th class="date">1 May</th>
               <td class="schedule-desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                  magnam reprehenderit aperiam magni aliquid vero laborum.
-                  Provident, minima beatae. Tempora recusandae aspernatur
-                  voluptates dolor aut deserunt iure ex, nam odit!
+                  Spring celebration at <strong>6PM</strong> at the Community
+                  Center. Fireworks at <strong>7:30PM</strong>. Don't be late!
                 </p>
               </td>
             </tr>
@@ -146,10 +183,9 @@
               <th class="date">19 May</th>
               <td class="schedule-desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  dicta eaque dolores. Veritatis enim minima provident magni
-                  molestias labore quisquam, temporibus placeat vitae
-                  aspernatur, eaque sapiente iusto blanditiis magnam iste.
+                  <strong>Deadline</strong> for the repairs donations. Thank you
+                  for your patronage! The future actions are going to be
+                  announced at a later date
                 </p>
               </td>
             </tr>
@@ -157,10 +193,8 @@
               <th class="date">1 June</th>
               <td class="schedule-desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sapiente culpa doloremque reiciendis magnam dolores esse quo
-                  fuga. Temporibus amet iusto in nemo ad veritatis suscipit,
-                  asperiores, nulla corrupti harum alias.
+                  Garage sale at <strong>House 19</strong>! The sale is open for
+                  the whole day and everyone interesed is welcome!
                 </p>
               </td>
             </tr>
@@ -168,10 +202,7 @@
               <th class="date">10 June</th>
               <td class="schedule-desc">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  ipsa dignissimos ipsum inventore accusantium, fugiat quo
-                  recusandae magnam quos placeat ullam accusamus consequuntur
-                  perferendis voluptatum vitae ea eius expedita pariatur.
+                  Summer celebration. Time and Location <strong>TBA</strong>
                 </p>
               </td>
             </tr>
@@ -183,22 +214,24 @@
         <div class="cta-box">
           <h2 class="section-header">Still not sure?</h2>
           <p class="p-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-            pariatur tempore dolores dolorem nobis quos at.
+            You opinion matters to us. Don't hesitate to ask us anything!
           </p>
-          <a href="#"><button class="contact-button">Contact Us</button></a>
+          <a href="./contact.html"
+            ><button class="contact-button">Contact Us</button></a
+          >
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div>
         <p class="p-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          praesentium quam alias repellendus voluptatibus asperiores cum aperiam
-          neque provident.
+          Made by Kate
         </p>
       </div>
     </footer>
+
     <script src="app.js"></script>
+    <script src="home-app.js"></script>
   </body>
 </html>

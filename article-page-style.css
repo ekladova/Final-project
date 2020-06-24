@@ -1,0 +1,133 @@
+.article-cointainer {
+  width: 75%;
+  margin: auto;
+}
+
+.article-body {
+  padding: 2vw;
+}
+
+.article-header {
+  font-size: 4vw;
+  text-decoration: overline;
+  background-color: #406572;
+  color: white;
+  padding: 3vw;
+  margin: 0 2vw 2vw 2vw;
+  text-shadow: 2px 2px 10px darkslategrey;
+  width: 80%;
+  text-align: center;
+}
+
+.article-p-text {
+  line-height: 2.5vw;
+}
+
+.article-picture {
+  width: 25vw;
+  float: right;
+  border-radius: 1%;
+  margin-top: 0.5vw;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffe3e4;
+  width: 26vw;
+  height: 23vw;
+  float: right;
+  margin: 1vw 2vw 1vw 2vw;
+  flex-direction: column;
+  border-radius: 1%;
+}
+
+.picture-name {
+  font-size: large;
+  padding: 1vw;
+}
+.capital {
+  font-size: 5vw;
+  position: relative;
+  top: 1vw;
+}
+
+.about-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin: 5vw auto;
+  border: 2px solid #c5bcd0;
+  padding: 2vw;
+}
+
+.author-image {
+  width: 15vw;
+  border-radius: 50%;
+  margin: 2vw;
+}
+
+@media only screen and (max-width: 990px) {
+  .article-p-text {
+    line-height: 3.5vw;
+  }
+  .about-author {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .article-p-text {
+    line-height: 4.5vw;
+  }
+
+  .about-author {
+    width: 75%;
+  }
+
+  .article-picture {
+    width: 39vw;
+  }
+  .background {
+    width: 40vw;
+    height: 35vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .article-p-text {
+    line-height: 6.5vw;
+  }
+  .article-cointainer {
+    width: 95%;
+  }
+  .article-header {
+    margin: 2vw auto;
+    width: 90%;
+    font-size: 7vw;
+  }
+  .background,
+  .article-picture {
+    float: none;
+    margin: 2vw auto;
+    width: 90%;
+  }
+  .background {
+    height: 45vw;
+  }
+  .article-picture {
+    width: 50vw;
+  }
+  .author-image {
+    width: 30vw;
+  }
+
+  .capital {
+    font-size: 8vw;
+  }
+
+  .about-author {
+    width: 90%;
+  }
+}

@@ -7,6 +7,7 @@ const textareas = document.querySelectorAll("textarea");
 const issues = document.getElementById("issue");
 const name = document.getElementById("name");
 const desc = document.getElementById("typeBox");
+const house = document.getElementById("house");
 
 function getAction(form) {
   const subject = issues.value;
@@ -26,7 +27,7 @@ function getAction(form) {
     if (people[i].checked) {
       form.action = `mailto:${people[i].value}?subject=${subject} - ${
         name.value
-      }&body= 
+      }, House ${house.value}&body= 
        ${description}. I would like to be contacted by: ${contactValue}. Phone number: ${
         document.getElementById("phoneNumber").value
       }. Email: ${document.getElementById("emAddress").value}.
@@ -34,7 +35,13 @@ function getAction(form) {
 
       return form.action;
     } else {
-      form.action = "mailto:example@mail.com"; //default value if nothing is checked
+      form.action = `mailto:example@mail.com?subject=${subject} - ${
+        name.value
+      }, House ${house.value}&body= 
+       ${description}. I would like to be contacted by: ${contactValue}. Phone number: ${
+        document.getElementById("phoneNumber").value
+      }. Email: ${document.getElementById("emAddress").value}.
+       `; //default value if nothing is checked
     }
   }
 }

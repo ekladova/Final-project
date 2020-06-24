@@ -1,28 +1,19 @@
 /* __about page__ */
+
 .green-container {
   background-color: #406572;
-  height: 22vw;
+  height: 15vw;
   display: flex;
   align-content: flex-end;
 }
 
 .heading {
   height: fit-content;
-  width: 35%;
+  width: 80%;
   font-size: 3.4vw;
   padding: 2vw;
   color: white;
-}
-
-.white-container {
-  background-color: white;
-  height: 9vw;
-}
-.purple-container {
-  background-color: #c5bcd0;
-  height: 44vw;
-  width: 80%;
-  margin: auto;
+  display: block;
 }
 
 .people-image,
@@ -31,83 +22,54 @@
   width: 16vw;
   border-radius: 50%;
   margin: auto;
-  z-index: 999;
   position: relative;
   bottom: 3vw;
 }
 
 .pink-container {
-  height: 50vw;
-  width: 62%;
-  position: relative;
-  top: 14vw;
-  right: 19vw;
-  z-index: 99;
+  height: fit-content;
+  width: 75%;
+  margin: auto;
   background-color: #ffe3e4;
   line-height: 2vw;
-  max-height: 100vw;
 }
 
 .mission-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .mission-box {
-  width: 12vw;
+  width: 15vw;
   background: #ffffff;
   padding: 2vw;
   box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
   margin: 3vw 1vw;
   text-align: center;
-}
-
-.mission-textbox {
-  width: 85%;
-  background: #ffffff;
-  padding: 2vw;
-  box-shadow: 9px 7px 4px rgba(0, 0, 0, 0.25);
-  margin: 2vw auto;
-  text-align: center;
-}
-
-.team {
-  position: relative;
-  top: -1em;
-  text-align: center;
-  max-height: 1em;
-  font-size: 3.5vw;
-  padding: 4.92vw;
-  background-color: #ffe3e4;
+  min-height: 27vw;
 }
 
 .team-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 87%;
-  margin: 1vw auto;
+  width: 90%;
+  margin: 3vw auto;
 }
 
 .member {
   display: flex;
   flex-direction: column;
   width: 18vw;
-  height: 35vw;
+  height: fit-content;
   text-align: center;
   align-items: center;
-  z-index: 999;
 }
 
 .member article {
   padding: 5px;
-  height: 6vw;
-}
-
-.focus {
-  top: -6vw;
 }
 
 #member1 {
@@ -134,10 +96,6 @@
   background-size: cover;
 }
 
-.longer {
-  height: 45vw;
-}
-
 .p-text-about {
   line-height: 2vw;
 }
@@ -148,7 +106,7 @@
   }
 
   .pink-container {
-    position: initial;
+    position: static;
     width: 85%;
     margin: auto;
     height: fit-content;
@@ -156,44 +114,31 @@
 
   .mission-box {
     width: 21vw;
-    line-height: 3vw;
+    line-height: 1.7em;
+    min-height: 5vw;
   }
 
   .p-text-about {
-    font-size: 1.7vw;
-    line-height: 3vw;
-  }
-
-  .purple-container {
-    width: 95%;
-    height: 70vw;
-  }
-
-  .longer {
-    height: 65vw;
+    line-height: 1.3em;
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 870px) {
   .mission-container {
     flex-direction: column;
   }
 
   .mission-box {
     width: 85%;
-    height: 15vw;
-  }
-
-  .purple-container {
-    height: 92vw;
   }
 
   .team-container {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .member {
-    width: 30vw;
+    width: 35vw;
   }
 
   #member1,
@@ -202,19 +147,16 @@
     height: 30vw;
     width: 30vw;
   }
-
-  .longer {
-    height: 78vw;
-  }
 }
 
 @media only screen and (max-width: 550px) {
   .heading {
-    font-size: 5vw;
+    font-size: 8vw;
     width: 95%;
+    margin: 0 0 2vw 0;
   }
   .mission-box {
-    height: 30vw;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,21 +165,16 @@
   .mission-box h2,
   .p-text-about {
     font-size: 3.5vw;
-    line-height: 5vw;
+    line-height: 6vw;
   }
 
-  .purple-container {
-    height: 165vw;
-    width: 100%;
+  .h2-text-about {
+    font-size: 5vw;
   }
 
   .pink-container {
     max-height: none;
-  }
-
-  .team {
-    top: 0;
-    font-size: 5.5vw;
+    width: 100%;
   }
 
   .team-container {
@@ -245,8 +182,8 @@
   }
 
   .member {
-    width: 48vw;
-    height: 107vw;
+    width: 50vw;
+    height: 126vw;
     margin: 1vw;
   }
 
@@ -255,9 +192,5 @@
   #member3 {
     height: 48vw;
     width: 48vw;
-  }
-
-  .longer {
-    height: 221vw;
   }
 }
